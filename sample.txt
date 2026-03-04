@@ -1,0 +1,35 @@
+Welcome to Prompter!
+
+This is a sample text file to test the teleprompter application.
+
+The Prompter application allows you to:
+
+1. Load any text file
+2. Automatically scroll the text at a configurable speed
+3. Keep the window always on top of other applications
+
+This makes it perfect for:
+- Video presentations
+- Live streaming
+- Public speaking
+- Recording tutorials
+
+You can control the scrolling speed using the slider at the bottom of the window.
+
+The Start/Stop button lets you pause and resume scrolling at any time.
+
+Press Reset to go back to the beginning of the text.
+
+Try adjusting the speed while the text is scrolling to find your perfect reading pace!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+The application will automatically stop when it reaches the end of the text.
+
+Thank you for using Prompter!
