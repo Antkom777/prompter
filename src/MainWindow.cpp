@@ -7,9 +7,10 @@
 #include <QScrollBar>
 #include <QTextStream>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), isScrolling(false), scrollSpeed(DEFAULT_SPEED),
-      scrollAccumulator(0.0), currentFontSize(DEFAULT_FONT_SIZE) {
+MainWindow::MainWindow(const QString &executableName, QWidget *parent)
+    : QMainWindow(parent), executableName(executableName), isScrolling(false),
+      scrollSpeed(DEFAULT_SPEED), scrollAccumulator(0.0),
+      currentFontSize(DEFAULT_FONT_SIZE) {
   setupUI();
 
   // Set window to always stay on top
@@ -218,7 +219,7 @@ void MainWindow::resetScroll() {
 }
 
 void MainWindow::saveSettings() {
-  QSettings settings("Prompter", "PrompterApp");
+  QSettings settings("Prompter", "PrompterApp_" + executableName);
 
   // Save window geometry
   settings.setValue("geometry", saveGeometry());
@@ -235,7 +236,7 @@ void MainWindow::saveSettings() {
 }
 
 void MainWindow::loadSettings() {
-  QSettings settings("Prompter", "PrompterApp");
+  QSettings settings("Prompter", "PrompterApp_" + executableName);
 
   // Restore window geometry
   if (settings.contains("geometry")) {

@@ -16,7 +16,8 @@ class MainWindow : public QMainWindow {
   Q_OBJECT
 
 public:
-  explicit MainWindow(QWidget *parent = nullptr);
+  explicit MainWindow(const QString &executableName = "prompter",
+                      QWidget *parent = nullptr);
   ~MainWindow();
 
 private slots:
@@ -47,6 +48,7 @@ private:
   QLabel *statusLabel;
 
   QString lastFilePath;
+  QString executableName; // Name of the executable (for settings isolation)
 
   // Scrolling control
   QTimer *scrollTimer;
